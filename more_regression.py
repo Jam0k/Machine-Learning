@@ -81,4 +81,4 @@ X_campaign_pred_2d = X_campaign_pred.values.reshape(-1, 1)
 predicted_clicks_campaign += int(model_campaign.predict(X_campaign_pred_2d).sum())
 
 
-print("clicks outcomes prediction 30 days: ", predicted_clicks_campaign)
+print("Campaign outcomes prediction: ", predicted_clicks_campaign)
