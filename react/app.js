@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'application/json');
 
   // Execute a query to retrieve data from the database
-  pool.query('SELECT * FROM ad', (err, result) => {
+  pool.query('SELECT * FROM results', (err, result) => {
     if (err) {
       console.error(err);
       res.statusCode = 500;

@@ -10,7 +10,7 @@ conn = psycopg2.connect(
 )
 
 # Query the database and load the results into a pandas DataFrame
-df = pd.read_sql("SELECT * FROM your_table_name", conn)
+df = pd.read_sql("SELECT * FROM fb_ad_insight_api_transpose", conn)
 
 # Calculate and print the most frequently occurring "ad_format_asset"
 most_common_ad_format_asset = df['ad_format_asset'].mode()[0]

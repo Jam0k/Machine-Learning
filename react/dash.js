@@ -3,10 +3,10 @@ fetch('http://localhost:3000')
   .then(data => {
     // Create a Chart.js chart using the JSON data
     const chartData = {
-      labels: data.map(row => `${row.ID}: ${row.Name}`),
+      labels: data.map(row => row.account_id),
       datasets: [{
-        label: 'ID',
-        data: data.map(row => row.ID),
+        label: 'Clicks',
+        data: data.map(row => row.clicks),
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgba(255, 99, 132, 1)',
         borderWidth: 1
