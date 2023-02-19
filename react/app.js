@@ -10,9 +10,12 @@ const pool = new Pool({
 });
 
 const server = http.createServer((req, res) => {
-  // Set the response headers to indicate that the response will be JSON
+  // Set the response headers to allow cross-origin requests and indicate that the response will be JSON
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   res.setHeader('Content-Type', 'application/json');
-  
+
   // Execute a query to retrieve data from the database
   pool.query('SELECT * FROM ad', (err, result) => {
     if (err) {
