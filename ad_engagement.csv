@@ -1,0 +1,10 @@
+placement,creative,age,gender,location,engagement,conversions,cost_per_action,cost_per_conversion
+Facebook,Image,25-34,Male,United States,500,10,5.5,7.5
+Instagram,Video,18-24,Female,United Kingdom,350,5,6.2,8.9
+Facebook,Carousel,35-44,Male,Canada,420,8,5.1,7.2
+Instagram,Image,25-34,Female,Australia,600,15,4.3,6.1
+Facebook,Video,45-54,Male,United States,380,6,7.2,10.2
+Instagram,Carousel,18-24,Male,United Kingdom,300,4,8.1,11.5
+Facebook,Image,35-44,Female,Canada,450,9,4.9,6.9
+Instagram,Video,25-34,Male,Australia,550,12,4.6,6.5
+Facebook,Carousel,18-24,Female,United States,400,7,6.3,9.1
